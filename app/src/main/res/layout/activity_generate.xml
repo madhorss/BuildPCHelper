@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Activity.generate"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Purpose"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/ProcessorFactory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Processor Brand"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="Budget :"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toStartOf="@+id/edBudget"
+        app:layout_constraintTop_toBottomOf="@+id/rgMb" />
+
+    <EditText
+        android:id="@+id/edBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="7,000,000"
+        android:textColor="#FFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="18dp"
+        android:text="Generate PC"
+        app:layout_constraintStart_toStartOf="@+id/edBudget"
+        app:layout_constraintTop_toBottomOf="@+id/edBudget" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Fill the form first"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Storage Type"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+
+    <RadioGroup
+        android:id="@+id/rgPur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rdOffice"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/rdOffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdEditing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editing"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdGaming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gaming"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdPurNotSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Sure"
+            android:textColor="#FFF"
+            tools:layout_editor_absoluteX="193dp"
+            tools:layout_editor_absoluteY="103dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rdIntel"
+        app:layout_constraintStart_toStartOf="@+id/ProcessorFactory"
+        app:layout_constraintTop_toBottomOf="@+id/ProcessorFactory">
+
+        <RadioButton
+            android:id="@+id/rdIntel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intel"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdAmd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMD"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdProNotSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Sure"
+            android:textColor="#FFF"
+            tools:layout_editor_absoluteX="255dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgSto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:checkedButton="@+id/rdHDD"
+        app:layout_constraintStart_toStartOf="@+id/txtStor"
+        app:layout_constraintTop_toBottomOf="@+id/txtStor">
+
+        <RadioButton
+            android:id="@+id/rdHDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harddisk"
+            android:textColor="#FFF" />
+
+
+        <RadioButton
+            android:id="@+id/rdSSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SSD"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdStoNotSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Sure"
+            android:textColor="#FFF"
+            tools:layout_editor_absoluteX="296dp"
+            tools:layout_editor_absoluteY="202dp" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgMb"
+        android:layout_width="122dp"
+        android:layout_height="119dp"
+        android:layout_marginBottom="284dp"
+        android:checkedButton="@+id/rdAsus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/rdAsus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ASUS"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdMsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MSI"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdGigabyte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gigabyte"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdAsrock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ASRock"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/rdMbNotSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Not Sure"
+            android:textColor="#FFF" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Motherboard Brand"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="@+id/rgPur"
+        app:layout_constraintTop_toBottomOf="@+id/rgPur" />
+
+
+</android.support.constraint.ConstraintLayout>
